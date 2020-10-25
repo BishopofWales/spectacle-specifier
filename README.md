@@ -7,3 +7,6 @@ did correctly produce faces with glasses.
 
 I neither found nor looked for a performance increase compared to the simple linear interpolation. However I would be curious to see such a method scaled up for more dimensions. Instead of randomly sampling from a triangle,
 why not a tetrahedron? For n samples, you could create an n-1 dimensional shape, n points being the minimum number of points required to define a solid in n-1 dimensions. The math to do this beyond at this time. 
+
+UPDATE: Turns out the simplest shape in n-dimensional space has a name, it's called a simplex. Here's a paper which shows how to randomly sample from one:
+https://www.cs.cmu.edu/~nasmith/papers/smith+tromble.tr04.pdf
